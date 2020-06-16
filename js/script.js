@@ -10,15 +10,27 @@ va applicato uno sconto del 40% per gli over 65.
 
 // richiesta numero Km da percorrere
 var km = prompt("Inserisci i Chilometri da percorrere:");
-while (isNaN(km)==true) {
-  km = prompt("Attenzione: inserire solo valori numerici.\nInserisci i Chilometri da percorrere:");
+while (isNaN(km) == true || km == 0) {
+  if (isNaN(km) == true) {
+    alert("Attenzione: inserire solo valori numerici per il Km da percorrere.");
+  }
+  if (km == 0) {
+    alert("Attenzione: inserire una distanza maggiore di 0 Km.");
+  }
+  km = prompt("Inserisci i Chilometri da percorrere:");
 }
 console.log(km);
 
 // richiesta età del passeggero
 var eta = prompt("Inserisci la tua età:");
-while (isNaN(eta)==true) {
-  eta = prompt("Attenzione: inserire solo valori numerici.\nInserisci la tua età:");
+while (isNaN(eta) == true || eta == 0) {
+  if (isNaN(eta) == true) {
+    alert("Attenzione: inserire solo valori numerici per l'età.");
+  }
+  if (eta == 0) {
+    alert("Attenzione: inserire un'età maggiore di 0.");
+  }
+  eta = prompt("Inserisci la tua età:");
 }
 console.log(eta);
 
