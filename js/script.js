@@ -10,13 +10,19 @@ va applicato uno sconto del 40% per gli over 65.
 
 // richiesta numero Km da percorrere
 var km = prompt("Inserisci i Chilometri da percorrere:");
+while (isNaN(km)==true) {
+  km = prompt("Attenzione: inserire solo valori numerici.\nInserisci i Chilometri da percorrere:");
+}
 console.log(km);
 
 // richiesta età del passeggero
-var eta = parseInt(prompt("Inserisci la tua età:"));
+var eta = prompt("Inserisci la tua età:");
+while (isNaN(eta)==true) {
+  eta = prompt("Attenzione: inserire solo valori numerici.\nInserisci la tua età:");
+}
 console.log(eta);
 
-// calcolo prezzo totale del viggio
+// calcolo prezzo totale del viaggio
 var prezzoBase = 0.21 * km;
 // console.log("Prezzo base: " + prezzoBase);
 var prezzoBaseArrotondato = Math.round(prezzoBase * 100) / 100;
