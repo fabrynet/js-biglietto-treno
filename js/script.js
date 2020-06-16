@@ -61,8 +61,8 @@ if (eta < 18) {
 console.log(prezzoArrotondato);
 
 // output all'utente del prezzo totale del viaggio
-document.getElementById('text1').innerHTML = "In base ai chilometri da percorrere: " + km + " km";
-document.getElementById('text2').innerHTML = "E in base alla tua età: " + eta + " anni";
+document.getElementById('text1').innerHTML = "Chilometri da percorrere: " + km + " km";
+document.getElementById('text2').innerHTML = "Età passeggero: " + eta + " anni";
 if (scontoApplicato != 0) {
   document.getElementById('text3').innerHTML = "Il prezzo del tuo biglietto è di: " + prezzoArrotondato + " euro. (Sconto applicato: " + scontoApplicato + " euro)";
 } else {
